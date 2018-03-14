@@ -1,0 +1,548 @@
+/*body*/
+body{
+    font-family: 'Monda', sans-serif;
+    perspective: 200px;
+}
+/* Main Classes */
+/*font colors*/
+.black{
+    color: #142432;
+}
+.white{
+    color: #EEE;
+}
+.static{
+    position: static;
+}
+/* background colors */
+.bg-black{
+    background-color: #142432;
+    color: #EEE;
+}
+.bg-white{
+    background-color: #fff;
+    color: #142432;
+}
+/*overlay*/
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(35,38,47,0.85);
+    padding: 180px 0
+}
+/*background size cover*/
+.bg-cover{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.b-radius{
+    border-radius: 50%;
+    padding: 8px;
+    margin: 5px 10px 0 5px;
+    box-shadow: 0 0 12px;
+}
+/* bootstrab grid margin bottom */
+.col-sm-4, .col-md-6, .col-sm-6, .col-md-4{
+    margin-bottom: 20px;
+}
+/* button Hover Style*/
+.btn:hover{
+    color: #999
+}
+/* End Main Classes */
+
+/* font style [Border Bottom]*/
+h4{font-weight: bold}
+h2{
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2:before,
+h2:after{
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #999
+}
+h2:before{
+    width: 20px;
+    height: 15px;
+    border-radius: 40%;
+}
+h2:after{
+    width: 60px;
+    height: 3px;
+}
+/*End font style*/
+
+
+/* Start Header */
+#header {
+    background: url('../images/download.jpg') no-repeat center center;
+    -webkit-clip-path: polygon(25% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
+    -moz-clip-path: polygon(25% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
+    -ms-clip-path: polygon(25% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
+    -o-clip-path: polygon(25% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
+    clip-path: polygon(25% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
+    height: 100vh;
+    color: #EEE;
+    position: relative;
+    z-index: 1
+}
+    #header .container{
+        display: flex;
+        align-items: center;
+        height: 100%
+    }
+    #header h4{
+        font-weight: 100
+    }
+    #header .btn{
+        border-radius: 20px;
+        margin-right: 20px;
+        margin-top: 15px;
+        padding: 8px 15px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    #header .btn2{
+        background: none;
+        border: 1px solid #EEE
+    }
+
+/* End Header */
+
+/* Start About-Us */
+#about-us{
+    position: relative;
+    padding-top: 50px
+}
+    #about-us .mobile{
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        z-index: 3;
+    }
+    /* End About-Us*/
+
+/* Start Awesom Features */
+#awesome-fuetures{
+    padding: 180px 0;
+    background-color: #EEE;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%)
+}
+#awesome-fuetures h2{
+    margin-bottom: 80px
+}
+    #awesome-fuetures .feature{
+        margin-bottom: 20px;
+    }
+/* End Awesom Features */
+
+/* Start About App */
+#about-app{
+    padding: 20px 0;
+}
+    #about-app h2{
+        margin-bottom: 80px
+    }
+    #about-app h3{
+        margin-top: 50px
+    }
+    #about-app p:first-of-type{
+        margin: 30px 0 0px
+    }
+    #about-app .btn{
+        margin: 25px 10px 0 0;
+        border-radius: 30px;
+        padding: 5px 28px 8px 50px;
+        position: relative
+    }
+    #about-app .btn.bg-white{
+        border: 1px solid #142432
+    }
+    #about-app span.available{
+        font-size: 12px;
+        display: block
+    }
+        #about-app .btn i{
+            position: absolute;
+            left: 15px;
+            top: 11px;
+        }
+/* End About App */
+
+/* Start Awesome Features */
+#aweseme-feat{
+    background: url('../images/awesome.jpg') no-repeat center center;
+    color: #EEE;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%)
+}
+    #aweseme-feat .overlay{
+        padding: 180px 0;
+    }
+    #aweseme-feat h2{
+        position: static;
+        margin-bottom: 15px
+    }
+    #aweseme-feat i{
+        font-size: 32px;
+        border: 3px solid #EEE;
+        width: 60px;
+        margin: auto;
+        border-radius: 50%;
+        padding: 15px 15px 15px 18px;
+        cursor: pointer
+    }
+    #aweseme-feat i,
+    #aweseme-feat span{
+        display: block;
+    }
+
+/* End Awesome Features */
+
+/* Start Screenshoots */
+#screenshoots{
+    padding-bottom: 70px;
+}
+    #screenshoots h2{
+        margin-bottom: 70px;
+    }
+/* End Screenshoots */
+
+/* Start Team Members */
+#team{
+    background-color: #DDD;
+    padding: 300px 0;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+}
+    #team h2 {
+        margin-bottom: 80px;
+    }
+    #team .card{
+        height: 300px;
+        width: 250px;
+        position: relative;
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+    }
+    #team .face,
+    #team .back{
+        height: 300px;
+        width: 250px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+    }
+        #team .card:hover{
+            transform: rotateY(180deg)
+        }
+/*card face*/
+    #team .face{
+        z-index: 2;
+        width: 250px;
+    }
+        #team .face img{
+            margin: auto;
+            height: 300px;
+            width: 250px;
+        }
+/*card back*/
+    #team .back{
+        padding: 0 10px;  
+        transform: rotateY(180deg);
+        background-color: #FFF;
+        box-shadow: 0 0 15px
+    }
+        #team .back h5{
+            margin-top: 60px;
+            margin-bottom: 5px;
+            font-weight: bold
+        }
+        #team .back span{
+            font-size: 12px;
+            margin-bottom: 20px
+        }
+        #team .back .social{
+            width: 60%;
+            margin: auto;
+            margin-top: 20px;
+            padding-left: 5px;
+        }
+        #team .back .fa{
+            padding: 8px;
+            cursor: pointer
+        }
+            #team .back .fa:hover{
+                background-color: #142432;
+                color: #EEE
+            }
+/* End TEam Members */
+
+/* Start User Reviews */
+#user-reviews{
+    padding: 50px 0;
+    overflow: hidden
+}
+    /*carousel-inner*/
+    #user-reviews .carousel-inner{
+        background-color: #EEE;
+        width: 80%;
+        margin: auto;
+        text-shadow: none;
+        overflow:visible;
+        padding: 20px 40px
+    }
+        #user-reviews carousel-inner .item{
+            overflow: hidden
+        }
+        #user-reviews .carousel-inner p{
+            color: #777;
+            text-shadow: none
+        }
+        #user-reviews .carousel-inner .rate{
+            margin: 20px 0 10px
+        }
+            /*carousel-caption*/
+    #user-reviews .carousel-caption{
+        position: static;
+    }
+/*carousel-control*/
+    #user-reviews .carousel-control{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        top: 45%;
+        z-index: 5;
+        background-color: #142432
+    }
+#user-reviews .carousel-control.left{
+    left: -8%
+}
+#user-reviews .carousel-control.right{
+    right: -8%
+}
+#user-reviews .carousel-control span {
+    margin-left: -16px;
+    margin-top: -10px;
+    font-size: 22px
+}
+/* End User Reviews */
+
+/* Start Download Now */
+#download {
+    background: url('../images/download.jpg') no-repeat center center;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+}
+#download h2{
+    margin-bottom: 50px;
+}
+#download h2:before,
+#download h2:after{
+    content: none
+}
+#download .buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#download .btn{
+        margin: 25px 10px 0 0;
+        border-radius: 30px;
+        padding: 5px 28px 8px 50px;
+        position: relative
+    }
+    #download .btn.bg-white{
+        border: 1px solid #142432
+    }
+    #download span.available{
+        font-size: 12px;
+        display: block
+    }
+        #download .btn i{
+            position: absolute;
+            left: 15px;
+            top: 11px;
+        }
+/* End Download Now */
+
+/* Start recent Blog Post */
+#recent-blog{
+    padding: 100px 0;
+}
+    #recent-blog h2{
+        margin-bottom: 80px;
+    }
+    #recent-blog .blog{
+        background-color: #EEE;
+        padding-bottom: 10px
+    }
+    #recent-blog .text{
+        padding: 5px 10px
+    }
+        #recent-blog .text h5{
+            font-weight: bold;
+            font-size: 16px
+        }
+        #recent-blog .text p{
+            font-size: 13px;
+            margin: 15px 0    
+        }
+    #recent-blog .details{
+        display: flex;
+        justify-content: space-between;
+    }
+    #recent-blog .date{
+        display: flex;
+        justify-content: center;
+    }
+        #recent-blog .date i{
+            font-size: 12px;
+            padding: 15px 5px 0 5px
+        }
+        #recent-blog .date h6{
+            padding-top: 3px
+        }
+        #recent-blog .date .day{
+            width: 40px;
+            padding: 2px 5px;
+            line-height: 1.3;
+        }
+        #recent-blog .date span{
+            padding-left: 5px;
+        }
+        #recent-blog .likes i{
+            padding-top: 13px;
+            padding-right: 5px
+        }
+/* End recent Blog Post */
+
+/* Start Contact Us */
+#contact-us{
+    background: url('../images/contact.jpg') no-repeat center center;
+    clip-path: polygon(0 15%, 80% 0, 100% 15%, 100% 100%, 0 100%);
+}
+        #contact-us h2:before,
+        #contact-us h2:after{
+            content: none
+        }
+        #contact-us .overlay{
+            padding: 180px 0 30px
+        }
+/*Subscribe*/
+        #contact-us .subscribe .subscrib{
+            display: inline-block;
+            width: 70%;
+            margin: 70px 0 70px 15%
+        }
+        #contact-us .subscribe span{
+            font-size: 18px;
+            margin-left: -40px;
+            cursor: pointer
+        }
+/*Contact Form*/
+    #contact-us h3{
+        margin-bottom: 30px;
+        margin-left: 15px
+    }
+    #contact-us .contact-form{
+        background-color: rgba(226,226,228,0.7);
+        padding: 40px;
+        overflow: hidden;
+    }
+/*Get IN Touch*/
+        #contact-us .get-in .form-control{
+            font-size: 14px;
+            border-radius: 2px
+        }
+        #contact-us .get-in .form-control::placeholder
+        {
+            font-size: 13px;
+        }
+        #contact-us .get-in textarea{
+            height: 100px;
+        }
+        #contact-us .get-in button{
+            margin-top: 20px;
+            margin-left: 15px;
+            border-radius: 30px;
+            padding: 8px 20px
+        }
+/*Contact Info*/
+    #contact-us .contact-info{
+        margin-top: 57px;
+        padding: 53px 30px;
+        overflow: hidden;
+    }
+        #contact-us .contact-info .left{
+            float: left;
+            width: 10%;
+        }
+        #contact-us .contact-info .right{
+            float: left;
+            width: 90%
+        }
+        #contact-us .contact-info i{
+            display: block;
+            margin-bottom: 30px;
+            padding-top: 15px
+        }
+        #contact-us .contact-info span{
+            display: block;
+            width: 100%
+        }
+        #contact-us .contact-info .website
+        {
+            margin-top: 25px
+        }
+        #contact-us .contact-info .adress{
+            margin-top: 20px
+        }
+/*Social Media*/
+        #contact-us .social-media .icons{
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+            margin: auto;
+            margin-top: 50px
+        }
+        #contact-us .social-media i{
+            background-color: #EEE;
+            color: #777;
+            border-radius: 50%;
+            padding: 13px 40px 13px 15px;
+            cursor: pointer;
+            transition: all .5s ease-in-out;
+            margin: 5px
+        }
+        #contact-us .social-media i:hover {
+            background-color: #142432;
+            color: #EEE
+        }
+        #contact-us .social-media h4{
+            margin-top: 40px;
+            font-weight: normal
+        }
+/* End Contact Us */
+
+
+
+
+
+
+/*#0E0E0E*/
+
+
+
+
+
+
+
